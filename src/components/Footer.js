@@ -27,10 +27,10 @@ const Footer = () => {
             <Link to="/contact" className="text-reset mx-2">
               <i className="fab fa-google footer-icon" onClick={()=>{window.open("https://www.singhsabhacanada.com/", "_blank")}}></i>
             </Link>
-            <Link to="/contact" className="text-reset mx-2">
+            <Link to="/contact" className="text-reset">
               <i className="fab fa-twitter footer-icon"></i>
             </Link>
-            <Link to="/contact" className="text-reset">
+            <Link to="/contact" className="text-reset mx-2">
               <i className="fab fa-instagram footer-icon"></i>
             </Link>
           </div>

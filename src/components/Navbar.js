@@ -39,9 +39,9 @@ import $ from "jquery"
                         Articles
                         </Link>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><Link className="dropdown-item js-scroll-trigger" to="/english">English</Link></li>
+                            <li><Link className="dropdown-item" to="/english">English</Link></li>
                             {/* <li><hr className="dropdown-divider"/></li> */}
-                            <li><Link className="dropdown-item js-scroll-trigger" to="/punjabi">Punjabi</Link></li>
+                            <li><Link className="dropdown-item" to="/punjabi">Punjabi</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item">

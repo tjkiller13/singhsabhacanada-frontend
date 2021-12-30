@@ -2,7 +2,7 @@ import ArticleContext from "./articleContext";
 import { useState } from "react";
 
 const ArticleState = (props) => {
-  const host = "http://localhost:5000"
+  const host = "https://singhsabhacanada.herokuapp.com"
   const articlesInitial = []
   const searchArticlesInitial = []
   const [articles, setArticles] = useState(articlesInitial)   

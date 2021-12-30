@@ -2,7 +2,7 @@ import FeedbackContext from "./feedbackContext";
 import { useState } from "react";
 
 const FeedbackState = (props) => {
-  const host = "http://localhost:5000"
+  const host = "https://singhsabhacanada.herokuapp.com"
   const feedbacksInitial = []
   const [feedbacks, setFeedbacks] = useState(feedbacksInitial) 
   

@@ -2,7 +2,7 @@ import BookContext from "./bookContext";
 import { useState } from "react";
 
 const BookState = (props) => {
-  const host = "http://localhost:5000"
+  const host = "https://singhsabhacanada.herokuapp.com"
   const booksInitial = []
   const searchBooksInitial = []
   const [books, setBooks] = useState(booksInitial)   

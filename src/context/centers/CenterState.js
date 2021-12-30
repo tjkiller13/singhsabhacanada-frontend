@@ -2,7 +2,7 @@ import CenterContext from "./centerContext";
 import { useState } from "react";
 
 const CenterState = (props) => {
-  const host = "http://localhost:5000"
+  const host = "https://singhsabhacanada.herokuapp.com"
   const centersInitial = []
   const [centers, setCenters] = useState(centersInitial)
   

@@ -1,25 +1,30 @@
 // rafce
 
-import React,{useContext} from 'react'
+import React,{useContext, useRef} from 'react'
 import {
     Link, useLocation
   } from "react-router-dom"
 import bookContext from "../context/books/bookContext"
 
-  
+import $ from "jquery"
+
   const Navbar = () => {
 
     let location = useLocation()
 
     const context = useContext(bookContext)
     const {setauthorState} = context
+    const ref = useRef(null)
+    $('.navbar-nav>li>a').on("click",function(){
+        ref.current.click()
+      })
 
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
             <div className="container-fluid" id="navbar-div">
                 <div id="navbar-logo">
-                        <button className="navbar-toggler mx-2" id="navtoggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler mx-2" ref={ref} id="navtoggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>              
                         <Link className="navbar-brand" id="navlogo" to="/"><img id="navimg" src={process.env.PUBLIC_URL + '/newlogo.jpg'} alt="" height="40em"/></Link>
@@ -27,7 +32,7 @@ import bookContext from "../context/books/bookContext"
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                    <Link className={`nav-link ${location.pathname==="/"?"active":""}`} aria-current="page" to="/">Home</Link>
+                    <Link className={`nav-link js-scroll-trigger ${location.pathname==="/"?"active":""}`} aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item dropdown">
                         <Link className={`nav-link dropdown-toggle`} to="/articles/english" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

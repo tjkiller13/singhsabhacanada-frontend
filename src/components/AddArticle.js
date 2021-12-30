@@ -35,7 +35,7 @@ const AddArticle = (props) => {
     
     return (
         <div>
-                <form className="row">
+                <form className="row mx-2">
                 <div className="col-2">
                     <input type="text" className="form-control" id="title" value={title} name="title" aria-describedby="emailHelp" placeholder="Title" onChange={onChange} minLength={3} required/>
                 </div>

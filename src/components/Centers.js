@@ -35,7 +35,7 @@ const Centers = (props) => {
     }
 
     return (
-        <div className="new overflow-auto" style={{"height":"74vh"}}>
+        <div className="new overflow-auto" style={{"height":"100vh"}}>
         <div className="table-responsive">
             <table cellPadding={0} cellSpacing={0} className="table table-stripped table-bordered">
                 <thead>

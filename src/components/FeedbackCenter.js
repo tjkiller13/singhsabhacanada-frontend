@@ -12,7 +12,7 @@ const FeedbackCenter = (props) => {
     },[])
 
     return (
-        <div className="container my-2">
+        <div className="mx-4 my-2">
         <div className = "row my-2 text-center">
             <h2 style={{color:"rgb(224 94 82)"}}>Feedback from Users</h2>
             <div className="container mx-2 text-center">

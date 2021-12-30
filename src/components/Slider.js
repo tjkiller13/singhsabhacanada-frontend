@@ -17,7 +17,11 @@ const Slider = () => {
                 
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={process.env.PUBLIC_URL + `newlogo.jpg`} className="d-block w-100" alt="..." style={{"height":"70vh"}}/>
+                        <picture>
+                            <source media="(max-width: 1000px)" srcset={process.env.PUBLIC_URL + `logophones.jpg`}/>
+                            <source media="(min-width: 1001px)" srcset={process.env.PUBLIC_URL + `newlogo.jpg`}/>
+                            <img src={process.env.PUBLIC_URL + `newlogo.jpg`} className="d-block w-100" alt="..." style={{"height":"70vh"}}/>
+                        </picture>
                     </div>
                     {articles.map((article)=>{
                         return <SliderItem key={article._id} article={article}/>               

@@ -19,7 +19,7 @@ const ArticlesCenter = (props) => {
 
     return (
         <>
-    <div className={(localStorage.getItem('token'))?"container":""}>
+    <div className={(localStorage.getItem('token'))?"":""}>
         {(localStorage.getItem('token'))?<AddArticle showAlert={props.showAlert}/>:<Slider />}
         {loading && <Spinner />}
         <div className="row" style={{margin:"1vw"}}>

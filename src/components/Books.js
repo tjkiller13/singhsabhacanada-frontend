@@ -21,7 +21,7 @@ const Books = (props) => {
 
     return ( 
         <>
-        <div className={(localStorage.getItem('token'))?"container":""}>
+        <div className={(localStorage.getItem('token'))?"":""}>
         {(localStorage.getItem('token')) && <AddBook showAlert={props.showAlert}/>}
         {!(localStorage.getItem('token')) && <FilterBooks showAlert={props.showAlert}/>}
         {loading && <Spinner />}

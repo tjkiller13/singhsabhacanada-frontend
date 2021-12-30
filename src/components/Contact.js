@@ -24,23 +24,23 @@ const Contact = (props) => {
     return (
         <div className="mb-3 mt-3">
             <div className="container">
-                <div className="input-group mb-3">
+                <div className="input-group mb-2">
                     <span className="input-group-text myinput" id="basic-addon1">Name</span>
                     <input type="text" name="name" value={feedback.name} id="name" className="form-control" placeholder="Enter your Full Name" aria-label="Username" aria-describedby="basic-addon1" onChange={onChange} minLength={5} required />
                 </div>
-                <div className="input-group mb-3">
+                <div className="input-group mb-2">
                     <input type="email" name="email" value={feedback.email} id="email" className="form-control" placeholder="Enter a valid email" aria-label="Recipient's username" aria-describedby="basic-addon2" onChange={onChange} minLength={5} required />
                     <span className="input-group-text myinput" id="basic-addon2">@example.com</span>
                 </div>
-                <div className="input-group mb-3">
+                <div className="input-group mb-2">
                     <span className="input-group-text myinput" id="basic-addon1">Subject</span>
                     <input type="text" name="subject" value={feedback.subject} id="subject" className="form-control" placeholder="Subject of your message" aria-label="Username" aria-describedby="basic-addon1" onChange={onChange} minLength={10} required />
                 </div>
-                <div className="input-group mb-3">
+                <div className="input-group mb-2">
                     <input type="text" name="message" value={feedback.message} id="message" className="form-control" placeholder="Type your thoughts" aria-label="Recipient's username" aria-describedby="basic-addon2" onChange={onChange} minLength={10} required />
                     <span className="input-group-text myinput" id="basic-addon2">Message</span>
                 </div>
-                <div className="container d-flex justify-content-center mb-3">
+                <div className="container d-flex justify-content-center">
                     <button type="button" disabled={feedback.name.length<5 || feedback.email.length<5 || feedback.subject.length<10 || feedback.message.length<10} className="btn btn-light" id="submit" onClick={handleClick}>Submit Your Feedback</button>
                 </div>
                 <div className="row">

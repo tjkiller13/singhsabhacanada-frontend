@@ -15,7 +15,7 @@ import $ from "jquery"
     const context = useContext(bookContext)
     const {setauthorState} = context
     const ref = useRef(null)
-    $('.navbar-nav>li>a').on("click",function(){
+    $('.js-scroll-trigger').on("click",function(){
         ref.current.click()
       })
 
@@ -39,28 +39,28 @@ import $ from "jquery"
                         Articles
                         </Link>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><Link className="dropdown-item" to="/english">English</Link></li>
+                            <li><Link className="dropdown-item js-scroll-trigger" to="/english">English</Link></li>
                             {/* <li><hr className="dropdown-divider"/></li> */}
-                            <li><Link className="dropdown-item" to="/punjabi">Punjabi</Link></li>
+                            <li><Link className="dropdown-item js-scroll-trigger" to="/punjabi">Punjabi</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item">
-                    <Link className={`nav-link ${location.pathname==="/books"?"active":""}`} aria-current="page" to="/books">Books</Link>
+                    <Link className={`nav-link js-scroll-trigger ${location.pathname==="/books"?"active":""}`} aria-current="page" to="/books">Books</Link>
                     </li>   
                     <li className="nav-item">
-                    <Link className={`nav-link ${location.pathname==="/gurmatcenters"?"active":""}`} aria-current="page" to="/gurmatcenters">Gurmat Centers</Link>
+                    <Link className={`nav-link js-scroll-trigger ${location.pathname==="/gurmatcenters"?"active":""}`} aria-current="page" to="/gurmatcenters">Gurmat Centers</Link>
                     </li>   
                     <li className="nav-item">
-                    <Link className={`nav-link ${location.pathname==="/gallery"?"active":""}`} aria-current="page" to="/gallery">Gallery</Link>
+                    <Link className={`nav-link js-scroll-trigger  ${location.pathname==="/gallery"?"active":""}`} aria-current="page" to="/gallery">Gallery</Link>
                     </li>   
                     <li className="nav-item">
-                    <Link className={`nav-link ${location.pathname==="/contact"?"active":""}`} aria-current="page" to="/contact">Contact Us</Link>
+                    <Link className={`nav-link js-scroll-trigger ${location.pathname==="/contact"?"active":""}`} aria-current="page" to="/contact">Contact Us</Link>
                     </li>   
                 </ul>
                 <form className="d-flex">                   
-                    {!localStorage.getItem('token')?<Link className="mx-2 my-2"  to="/login"><i className="fas fa-user icon" id="nav-icon"></i></Link>:"" }
+                    {!localStorage.getItem('token')?<Link className="mx-2 my-2"  to="/login"><i className="fas fa-user icon js-scroll-trigger" id="nav-icon"></i></Link>:"" }
                     {!localStorage.getItem('token')?<button type="button" id="donatenav" className="btn btn-sm btn-light" onClick={()=>{window.open("https://www.paypal.com/donate/?token=yrj4RmlVk0_DPzUrNdcfCNFok3AmNFsBoiqOae0M4EO1qoalVt9gmgSyr9V4Va0mb_NTcW9VKQIjVsRl&locale.x=CA", "_blank")}}>Donate Now!</button>:"" }
-                    {localStorage.getItem('token')?<Link className="mx-2 my-2" id="feedbackicon"  to="/feedbackCenter"><i className="fas fa-comments icon"></i></Link>:"" }
+                    {localStorage.getItem('token')?<Link className="mx-2 my-2" id="feedbackicon"  to="/feedbackCenter"><i className="fas fa-comments icon js-scroll-trigger"></i></Link>:"" }
                     {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button className="btn btn-outline-success" type="submit">Search</button> */}
                 </form>

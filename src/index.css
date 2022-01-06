@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(32 49 127);
 }
 
 code {
@@ -35,10 +36,10 @@ body { padding-top: 6vh; }
 }
 
 #navbar{
-  background-color: #ffffff !important;
+  background-color: rgb(248 195 1) !important;
   padding: 0px;
   /* font-family: 'Roboto Mono', monospace; */
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Sigmar One', cursive;
   font-weight:bold;
 }
 
@@ -47,101 +48,118 @@ body { padding-top: 6vh; }
 }
 
 .navbar-light .navbar-nav .dropdown-menu .dropdown-item {
-  color: rgb(224 94 82);
+  color: rgb(32 49 127);
 }
 .navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
-  background-color: rgb(224 94 82);
-  color: white;
+  background-color: rgb(32 49 127);
+  color: rgb(248 195 1);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgb(224 94 82);
+  color: rgb(32 49 127);
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  background-color: rgb(224 94 82);
-  color: white;
+  background-color: rgb(32 49 127);
+  color: rgb(248 195 1);
 }
 
 #nav-icon{
-  color: rgb(224 94 82);
+  color: rgb(32 49 127);
 }
 #nav-icon:hover{
-  color: rgb(218, 60, 45);
+  color:rgb(15, 22, 56);
+  font-weight:bold;
 }
 
 #article-title, #book-title{
   font-family: 'Markazi Text', serif;
-  text-decoration: none;
-  font-weight:bold;  
-  color:#555;
+  text-decoration: none; 
+  color:rgb(32 49 127);
 }
 #article-title:hover, #book-title:hover{ 
-  color:rgb(218, 60, 45);
+  color:rgb(32 49 127);
+  font-weight: bold;
 }
 
 .card:hover{
-  color:rgb(224 94 82)
+  color:rgb(32 49 127);
 }
 
 
 .card{
   border-radius: 0;
   box-shadow: 5px 5px 15px #9E9E9E;
+  transition: all 0.3s ease-in;
+  --webkit-transition: all 0.3s ease-in;
+  --moz-transition: all 0.3s ease-in;
 }
 
 .card:hover{
   border-radius:5px;
   border:none;
-  box-shadow: 5px 5px 10px rgb(224 94 82);
+  box-shadow: 5px 5px 10px rgb(248 195 1);  
+  background-color: rgb(248 195 1);
+  
   
 }
 
 .footer-section{
-  background-color: rgb(224 94 82);
-  color:#fff;
+  background-color: rgb(248 195 1);
+  color: rgb(32 49 127);
+  font-family: 'Anton', sans-serif;
 }
 
 .footer-icon:hover{
-  color:rgb(218, 60, 45);
+  color:rgb(15, 22, 56);
+  font-weight:bold;
 }
 
 #footer-item{
-  background-color: rgb(218, 60, 45);
-  color: #fff;
+  background-color: rgba(255, 196, 0, 0.945);
+  color: rgb(32 49 127);
+  font-family: 'Anton', sans-serif;
 }
 
 #donate{
-  background-color: rgb(224 94 82);
-  color: #fff;
+  background-color: rgb(32 49 127);
+  color: rgb(248 195 1) !important;
 }
 #donatenav{
-  color: rgb(224 94 82);
-  background-color: #fff;
+  background-color: rgb(32 49 127);;
+  color: rgb(248 195 1);
 }
 
 #submit{
-  background-color: rgb(224 94 82);
-  color: #fff;
+  color: rgb(32 49 127);;
+  background-color: rgb(248 195 1);
+}
+#submit:hover{
+  font-weight: bold;
 }
 
 #donate:hover{
-  color: rgb(224 94 82);
-  background-color: #fff;
+  color: rgb(248 195 1) !important;
+  background-color: #fff !important;
 }
 #donatenav:hover{
-  background-color: rgb(224 94 82);
-  color: #fff;
+  color: rgb(248 195 1) !important;
+  background-color: #fff !important;
 }
 
 #feedbackicon{
-  color: rgb(224 94 82);
+  color: rgb(32 49 127);
 }
 #feedbackicon:hover{
-  color: rgb(218, 60, 45);
+  color: rgb(15, 22, 56);
+  font-weight: bold;
 }
 
 thead{
-  background-color: rgb(224 94 82);
-  color: #fff;
+  background-color: rgb(248 195 1);
+  color: rgb(32 49 127);
+}
+tbody{
+  color: rgb(248 195 1);
+  background-color: rgb(32 49 127);
 }
 
 #date{
@@ -149,24 +167,26 @@ thead{
 }
 
 .myinput{
-  background-color: rgb(224 94 82);
-  color: #fff;
+  background-color: rgb(248 195 1);
+  color: rgb(32 49 127);
 }
 
 #dropdowntoggle{
-  background-color:rgb(224 94 82);
-  color: #fff;
+  background-color: rgb(248 195 1);
+  color: rgb(32 49 127);
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
 }
 #dropdowntoggle:hover{
-  color:rgb(224 94 82);
+  color:rgb(248 195 1);
   background-color:#fff;
 }
 
 .mydropdownitem{
-  color:rgb(224 94 82);
+  color: rgb(32 49 127);
 }
 .mydropdownitem:hover{
-  background-color:rgb(224 94 82);
+  background-color:rgb(248 195 1);
   color:#fff;
 }
 
@@ -175,15 +195,15 @@ thead{
 }
 
 @media(max-width: 1000px) {
-  #navimg{
-    width: 70%;
+  .navbar{
   }
-  #navlogo{
-    display: contents;
+  .navbar-toggler{
+    color:white !important;
+    background-color: rgb(32 49 127);
   }
-  #navtoggler{
-    color:white;
-    background-color: rgb(224 94 82);
+  #navbar-div{
+    padding-left: 0px;
+    margin-left: 0px;
   }
 }
 

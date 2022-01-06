@@ -15,7 +15,7 @@ const FilteredArticlesPunjabi = (props) => {
 
   return (
     <>
-        <div className="">
+        <div className="mt-4">
                 {loading && <Spinner />}
         <div className="row" style={{margin:"1vw"}}>
             <div className="container text-center"> 

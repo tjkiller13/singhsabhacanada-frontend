@@ -20,7 +20,7 @@ const Books = (props) => {
     }, [])   
 
     return ( 
-        <>
+        <div class="mt-5">
         <div className={(localStorage.getItem('token'))?"":""}>
         {(localStorage.getItem('token')) && <AddBook showAlert={props.showAlert}/>}
         {!(localStorage.getItem('token')) && <FilterBooks showAlert={props.showAlert}/>}
@@ -34,7 +34,7 @@ const Books = (props) => {
             }).reverse()}            
         </div>
         </div>
-        </> 
+        </div> 
     )
 }
 

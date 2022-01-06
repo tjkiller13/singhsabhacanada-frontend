@@ -39,19 +39,18 @@ const Login = (props) => {
     }
 
     return (
-        <div className="container">
+        <div className="container mt-5">
         <form onSubmit={handleSubmit}>
-            <div className="mb-3">
-                <label htmlFor="email" className="form-label">Email address</label>
-                <input type="email" className="form-control" id="email" value={credentials.email} onChange={onChange} aria-describedby="emailHelp" name="email"/>
-                <div id="emailHelp" className="form-text"></div>
+            <div className="input-group mb-2 my-1">
+                <input type="email" className="form-control" id="email" value={credentials.email} onChange={onChange} name="email" placeholder="Enter your email" aria-label="Username" aria-describedby="basic-addon1" onChange={onChange} required />
+                <span className="input-group-text myinput" id="basic-addon2">@example.com</span>
             </div>
-            <div className="mb-3">
-                <label htmlFor="password" className="form-label">Password</label>
-                <input type="password" className="form-control" id="password" value={credentials.password} onChange={onChange} name="password"/>
+            <div className="input-group mb-2 my-1">
+                <span className="input-group-text myinput" id="basic-addon1">Password</span>
+                <input type="password" className="form-control" id="password" value={credentials.password} onChange={onChange} name="password" placeholder="Enter your Password" aria-label="Username" aria-describedby="basic-addon1" onChange={onChange} required />
             </div>
-            <div>
-                <button type="submit" onSubmit={handleSubmit} className="btn btn-primary">Log-In</button>
+            <div class="text-center mt-3">
+                <button type="submit" onSubmit={handleSubmit} id="submit" className="btn btn-primary">Log-In</button>
             </div>
         </form>
         </div>

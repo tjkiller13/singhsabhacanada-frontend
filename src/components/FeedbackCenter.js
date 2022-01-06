@@ -12,9 +12,9 @@ const FeedbackCenter = (props) => {
     },[])
 
     return (
-        <div className="mx-4 my-2">
+        <div className="mx-4 mb-2 mt-4">
         <div className = "row my-2 text-center">
-            <h2 style={{color:"rgb(224 94 82)"}}>Feedback from Users</h2>
+            <h2 style={{color:"rgb(248 195 1)"}}>Feedback from Users</h2>
             <div className="container mx-2 text-center">
             {feedbacks.length===0 && 'No feedbacks do display'}
             </div>

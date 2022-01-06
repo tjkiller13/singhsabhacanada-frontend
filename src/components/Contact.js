@@ -22,7 +22,7 @@ const Contact = (props) => {
         setFeedback({...feedback,[e.target.name]:e.target.value})
     }
     return (
-        <div className="mb-3 mt-3">
+        <div className="mb-3 mt-5">
             <div className="container">
                 <div className="input-group mb-2">
                     <span className="input-group-text myinput" id="basic-addon1">Name</span>
@@ -46,7 +46,7 @@ const Contact = (props) => {
                 <div className="row">
                     <div className="col-md-6 text-center d-flex justify-content-center float-left mx-auto">                    
                         <div className="card" style={{width: '20em'}}>
-                        <div className="card-header mycardheader" style={{backgroundColor:"rgb(224 94 82)"}}>Email Us</div>
+                        <div className="card-header mycardheader" style={{backgroundColor:"rgb(248 195 1)",color:"rgb(32 49 127)",fontWeight:"bold"}}>Email Us</div>
                         <div className="card-body">
                         <p className="card-text">infor@singhsabhacanada.com</p>
                         <p className="card-text">ssicanada01@gmail.com</p>
@@ -56,7 +56,7 @@ const Contact = (props) => {
                     </div>
                     <div className="col-md-6 container text-center d-flex justify-content-center float-right mx-auto">                    
                         <div className="card" style={{width: '20em'}}>
-                        <div className="card-header mycardheader" style={{backgroundColor:"rgb(224 94 82)"}}>Reach us on Facebook</div>
+                        <div className="card-header mycardheader" style={{backgroundColor:"rgb(248 195 1)",color:"rgb(32 49 127)",fontWeight:"bold"}}>Reach us on Facebook</div>
                         <div className="card-body">
                         <p className="card-text">https://www.facebook.com/singhsabhacanada/</p>
                         <p className="card-text">https://www.facebook.com/profile.php?id=100001653938304</p>

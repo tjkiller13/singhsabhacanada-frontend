@@ -1,10 +1,10 @@
 import React, {useContext} from 'react'
 
 const SliderItem = (props) => {
-    const { article } = props
+    const { article, index, newHeight } = props
     return (
-        <div className="carousel-item">
-            <img src={process.env.PUBLIC_URL + `articles/${article.articleImg}`} className="d-block w-100" alt="..."  style={{"height":"70vh"}}/>
+        <div className={index===1 ? "carousel-item active" : "carousel-item"}>
+            <img src={process.env.PUBLIC_URL + `articles/${article.articleImg}`} className="d-block w-100" alt="..." style={{"height":"70vh"}}/>
             <div className="carousel-caption" id="crouselcaption"style={{
                     display: 'flex',
                     position: 'absolute',

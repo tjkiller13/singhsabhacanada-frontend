@@ -49,7 +49,7 @@ const AddBook = (props) => {
                     <input type="file" className="form-control" id="bookImg" name="bookImg" defaultValue={bookImg} aria-describedby="emailHelp" onChange={onChange3} minLength={3} required/>
                 </div>
                 <div className="col-2">
-                    <button disabled={author.length<3 || title.length<3 || bookUrl.length<3 || bookImg.length<3} type="submit" className="btn btn-primary form-control" onClick={handleClick}>Add Book</button>
+                    <button disabled={author.length<3 || title.length<3 || bookUrl.length<3 || bookImg.length<3} id="submit" type="submit" className="btn btn-primary form-control" onClick={handleClick}>Add Book</button>
                 </div>
                 </form>        
         </div>

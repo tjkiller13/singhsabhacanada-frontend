@@ -21,6 +21,7 @@ import Books from './components/Books';
 import FeedbackCenter from './components/FeedbackCenter';
 import ArticlesCenter from './components/ArticlesCenter';
 import Gallery from './components/Gallery';
+import Videos from './components/Videos';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
           <Route exact path="/english"><FilteredArticles category="English"/></Route>
           <Route exact path="/punjabi"><FilteredArticlesPunjabi category="Punjabi"/></Route>
           <Route exact path="/gallery"><Gallery category="Gallery" /></Route>
+          <Route exact path="/videos"><Videos category="Videos" /></Route>
         </Switch>
         <Footer />
       </Router>

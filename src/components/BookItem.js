@@ -16,7 +16,7 @@ const BookItem = (props) => {
                     position: 'absolute',
                     left: '0'
                 }}> 
-                {<span className="badge" style={{backgroundColor:"rgb(224 94 82)",color:"white",borderRadius:"0"}}>Author: {book.author}</span>}
+                {<span className="badge" style={{backgroundColor:"rgb(248 195 1)",color:"rgb(32 49 127)",borderRadius:"0"}}>Author: {book.author}</span>}
                {(localStorage.getItem('token')) && <i className="far fa-trash-alt mx-2" onClick={()=>{deleteBook(book._id);props.showAlert("Book has been deleted","warning")}}></i>}
             </div>
                 <img src={process.env.PUBLIC_URL + `uploads/${book.bookImg}`} className="card-img-top" alt="..." />

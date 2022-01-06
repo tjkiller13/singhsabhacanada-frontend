@@ -16,7 +16,7 @@ const SearchItem = (props) => {
                     position: 'absolute',
                     left: '0'
                 }}> 
-                {<span className="badge" style={{backgroundColor:"rgb(224 94 82)",color:"white",borderRadius:"0"}}>Author: {searchBook.author}</span>}
+                {<span className="badge" style={{backgroundColor:"rgb(248 195 1)",color:"rgb(32 49 127)",borderRadius:"0"}}>Author: {searchBook.author}</span>}
             </div>
                 <img src={process.env.PUBLIC_URL + `uploads/${searchBook.bookImg}`} className="card-img-top" alt="..." />
                 <div className="card-body">

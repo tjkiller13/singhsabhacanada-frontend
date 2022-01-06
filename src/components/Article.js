@@ -8,7 +8,7 @@ const Article = (props) => {
     const { article, index } = props
 
     return (
-        <div className="col-md-3 my-3">
+        <div className="col-md-3 mb-3">
             <div className="card">
             <div style={{
                     display: 'flex',

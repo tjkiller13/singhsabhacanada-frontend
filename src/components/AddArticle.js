@@ -35,7 +35,7 @@ const AddArticle = (props) => {
     
     return (
         <div>
-                <form className="row mx-2">
+                <form className="row mx-2 mb-4 mt-5">
                 <div className="col-2">
                     <input type="text" className="form-control" id="title" value={title} name="title" aria-describedby="emailHelp" placeholder="Title" onChange={onChange} minLength={3} required/>
                 </div>
@@ -49,7 +49,7 @@ const AddArticle = (props) => {
                     <input type="file" className="form-control" id="articleImg" name="articleImg" defaultValue={articleImg} aria-describedby="emailHelp" onChange={onChange3} minLength={3} required/>
                 </div>
                 <div className="col-2">
-                    <button disabled={language.length<3 || title.length<3 || articleImg.length<3} type="submit" className="btn btn-primary form-control" onClick={handleClick}>Add Article</button>
+                    <button disabled={language.length<3 || title.length<3 || articleImg.length<3} type="submit" id="submit" className="btn btn-primary form-control" onClick={handleClick}>Add Article</button>
                 </div>
                 </form>        
         </div>

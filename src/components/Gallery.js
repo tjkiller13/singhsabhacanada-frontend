@@ -13,10 +13,10 @@ const Gallery = (props) => {
     }, [])
     return (
         <div>
-            <div className="row my-4" style={{margin:"1vw"}}>
+            <div className="row my-5" style={{margin:"1vw"}}>
             {loading && <Spinner />}
                 {articles.map((article)=>{
-                    return <div class="item col-md-4 my-3">
+                    return <div class="item col-md-4 mb-3">
                     <Link className="fancybox" data-fancybox="gallery" target="_blank" to={process.env.PUBLIC_URL + `articles/${article.articleImg}`}>
                         <img src={process.env.PUBLIC_URL + `articles/${article.articleImg}`} alt="" width="100%" height="100%"/>
                     </Link>

@@ -16,7 +16,7 @@ const SearchAuthor = (props) => {
     }, []) 
     
     return (
-        <div className="container my-2">
+        <div className="container">
             {loading && <Spinner />}
         <div className="row">
             {searchBooks.map((searchBook) => {

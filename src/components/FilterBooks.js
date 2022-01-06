@@ -35,7 +35,7 @@ const FilterBooks = () => {
     <div className="my-1">
       <div className="dropdown d-flex justify-content-end">
         <button className="btn btn-secondary dropdown-toggle" onClick={showAll} type="button" id="dropdowntoggle" data-bs-toggle="dropdown" aria-expanded="false">
-          Author
+          AUTHOR
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         {newArr.map((element, index) => {
